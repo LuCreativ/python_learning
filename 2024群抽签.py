@@ -17,8 +17,8 @@ print(f"北京时间: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')}")
 print(f"柏林时间: {berlin_time.strftime('%Y-%m-%d %H:%M:%S')}")
 
 
-sender = ['马肝','刨冰','小邓','婧玥','李宁','蕾蕾','嫖客','了嘴','马宝','肚咪咪']
-receiver = ['马肝','刨冰','小邓','婧玥','李宁','蕾蕾','嫖客','了嘴','马宝','肚咪咪']
+sender = ['马肝','刨冰','小邓','婧玥','李','蕾蕾','嫖','了嘴']
+receiver = ['马肝','刨冰','小邓','婧玥','李','蕾蕾','嫖','了嘴']
 
 for i in range(len(sender)):     #按顺序送礼
     random.shuffle(receiver)     #随机收礼人
@@ -30,4 +30,4 @@ for i in range(len(sender)):     #按顺序送礼
     receiver.remove(y)            #收礼人列表中删除 已收    
  
     print(f'{sender[i]} -> {y}')
-    time.sleep(2)
+    time.sleep(3)
